@@ -5,7 +5,7 @@ const fs = require('fs')
 const bcrypt = require('bcrypt')
 
 router.post('/register', async (req, res) => {
-  fs.readFile('../data.json', 'utf8', async (err, jsonString) => {
+  fs.readFile('./data.json', 'utf8', async (err, jsonString) => {
     if (err) {
       console.log('Error reading file from disk:', err)
       return
@@ -35,7 +35,7 @@ router.post('/register', async (req, res) => {
 })
 
 router.post('/login', async (req, res) => {
-  fs.readFile('../data.json', 'utf8', async (err, jsonString) => {
+  fs.readFile('./data.json', 'utf8', async (err, jsonString) => {
     if (err) {
       console.log('Error reading file from disk:', err)
       return
