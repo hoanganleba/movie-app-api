@@ -11,5 +11,10 @@
             "src": "/(.*)",
             "dest": "/"
         }
-    ]
+    ],
+    "functions": {
+        "index.js": {
+            "includeFiles": "data.json"
+        }
+    }
   }
