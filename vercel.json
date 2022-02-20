@@ -3,6 +3,7 @@
     "builds": [
         {
             "src": "./index.js",
+            "includeFiles": "data.json",
             "use": "@vercel/node" 
         }
     ],
@@ -12,9 +13,4 @@
             "dest": "/"
         }
     ],
-    "functions": {
-        "index.js": {
-            "includeFiles": "data.json"
-        }
-    }
   }
